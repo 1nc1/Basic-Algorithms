@@ -58,7 +58,7 @@
 
 // function four(arr,start,end) {
 //     var diff = (end - start) + 1;
-//     for(let i = start; i <= diff; i++) {
+//     for(let i = start; i < arr.length; i++) {
 //         arr[i] = arr[i + diff];
 //     }
 //     console.log(arr);
@@ -66,4 +66,4 @@
 //     return arr;
 // }
 
-// console.log(four([20,30,40,50,60,70],2,4));
+// console.log(four([10,20,30,40,50,60,70,80,90,100,110,120],1,7));
