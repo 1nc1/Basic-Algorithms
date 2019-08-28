@@ -840,16 +840,49 @@
 // console.log(insertAtwhilePreserve([1,2,3,4,5,6,7,8],3,80));
 
 // -------------------------------------------------------------------------------------------------
-// function removeAt(arr,indx) {
-//     var temp = 0;
-//     for(let i = 0; i < arr.length; i++) {
-//         if(i === indx) {
-//             temp = arr[i];
-//         }
+
+// function removeAt(arr,index) {
+//     var temp = arr[index];
+//     for(let i = index + 1; i < arr.length; i++) {
+//         arr[i - 1] = arr[i];
 //     }
+//     arr.length--;
+//     console.log(arr);
 //     return temp;
 // }
 
-// console.log(removeAt([1,2,3,4,5,6,7,8],3));
+// console.log(removeAt([10,56,23,91,103],2));
 
 // -------------------------------------------------------------------------------------------------
+
+// function removeAt(arr,index) {
+//     var temp = arr[index];
+//     for(let i = index + 1; i < arr.length; i++) {
+//         arr[i - 1] = arr[i];
+//     }
+//     arr.length--;
+//     console.log(arr);
+//     return temp;
+// }
+
+// console.log(removeAt([10,56,23,91,103],2));
+
+// function swapPairs(arr) {
+//     var temp = 0;
+//     if(arr.length % 2 === 0) {
+//         for(let i = 0; i < arr.length; i+=2) {
+//             temp = arr[i];
+//             arr[i] = arr[i + 1];
+//             arr[i + 1] = temp
+//         }
+//     } else {
+//         for(let i = 0; i < arr.length; i+=2) {
+//             temp = arr[i];
+//             arr[i] = arr[i + 1];
+//             arr[i + 1] = temp;
+//         }
+//     }
+//     return arr;
+// }
+
+// console.log(swapPairs([1,2,3,4,5,6,7,8,9]));
