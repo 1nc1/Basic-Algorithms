@@ -719,19 +719,19 @@
 //     for(let i = 0; i < arr.length; i++) {
 //         if(arr[i] % 2 !== 0) {
 //             oCount++;
+//             if(oCount === 3) {
+//                 console.log("That's odd!");
+//             }
 //         } else {
 //             oCount = 0;
 //         }
 //         if(arr[i] % 2 === 0) {
 //             eCount++;
+//             if(eCount === 3) {
+//                 console.log("Even more so!");
+//             }
 //         } else {
 //             eCount = 0;
-//         }
-//         if(oCount === 3) {
-//             console.log("That's odd!");
-//         }
-//         if(eCount === 3) {
-//             console.log("Even more so!");
 //         }
 //     }
 // }
@@ -762,18 +762,15 @@
 // string with a number – the length of the string at
 // previous array index – and return the array
 
-// function pLengths(arr) {
-//     var pStringToNum = 0;
-//     for(let i = 1; i < arr.length; i++) {
-//         for(let j = i + 1; j < arr.length; j++) { // Might need to add arr.length + 1
-//             arr[j] = arr[i].length;
-//             console.log(arr[j]);
-//         }
+// function previousLengths(arr) {
+//     for(let i = arr.length - 1; i >= 0; i--) {
+//         arr[i + 1] = arr[i].length;
 //     }
+//     arr.length = arr.length - 1;
 //     return arr;
 // }
+// console.log(previousLengths(['hello','dojo','awesome']));
 
-// console.log(pLengths(['hero','coding','exempt','extraordinary']));
 // --------------------------------------------------------------------------------------------------------------
 // Add Seven to Most
 
@@ -796,15 +793,17 @@
 // Given array. write a function to reverse values, in-place.
 // Example: reverse([3,1,6,4,2]) returns same array, containing [2,4,6,1,3].
 
-// function reverseArray(arr) {
-//     for(let i = 0; i < arr.length; i++) {
-
+// function reverseArr(arr) {
+//     for(let i = 0; i < arr.length/2; i++) {
+//         var temp = arr[i];
+//         arr[i] = arr[arr.length - 1 - i];
+//         arr[arr.length - 1 - i] = temp;
 //     }
+//     return arr;
 // }
+// console.log(reverseArr([3,1,6,4,2]));
 
-// NOT FINISHED -----------------
-
-
+// --------------------------------------------------------------------------------------------------------------
 // Given an array, move all values to the left, and last value should be 0
 
 // function move(arr) {
