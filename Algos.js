@@ -828,3 +828,29 @@
 //     return arr;
 // }
 // console.log(LetsUnshift([11, 23, 33, 54, 17, 89], 15));
+
+// -------------------------------------------------------------------------------------------------
+// function insertAtwhilePreserve(arr,indx,val) {
+//     for(let i = arr.length - 1; i >= indx; i--) {
+//         arr[i + 1] = arr[i];
+//     }
+//     arr[indx] = val;
+//     return arr;
+// }
+
+// console.log(insertAtwhilePreserve([1,2,3,4,5,6,7,8],3,80));
+
+// -------------------------------------------------------------------------------------------------
+// function removeAt(arr,indx) {
+//     var temp = 0;
+//     for(let i = 0; i < arr.length; i++) {
+//         if(i === indx) {
+//             temp = arr[i];
+//         }
+//     }
+//     return temp;
+// }
+
+// console.log(removeAt([1,2,3,4,5,6,7,8],3));
+
+// -------------------------------------------------------------------------------------------------
