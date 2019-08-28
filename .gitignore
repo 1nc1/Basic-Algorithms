@@ -1,4 +1,4 @@
 lib/
 node_modules/
-package-lcok.json
+package-lock.json
 spec/
