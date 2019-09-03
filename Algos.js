@@ -927,3 +927,21 @@
 // }
 
 // console.log(remove_blanks(' Pl ayTha tF u nkyM usi c'));
+
+// ---------------------------------------------------
+
+// Create a JavaScript function that given a string, returns the integer made
+// from the string’s digits. Given "0s1a3y5w7h9a2t4?6!8?0" , the function should
+// return the number 1357924680
+
+// function convert(str){
+//     var temp = '';
+//     for(let i = 0; i < str.length; i++){
+//         if(Number(str[i])){
+//             temp += str[i];
+//         }
+//     }
+//     console.log(temp);
+// }
+
+// convert('0s1a3y5w7h9a2t4?6!8?0')
