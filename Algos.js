@@ -886,3 +886,44 @@
 // }
 
 // console.log(swapPairs([1,2,3,4,5,6,7,8,9]));
+
+// ---------------------------------------------------
+// Min to Front
+
+// function minToFront(arr){
+//     var min = arr[0];
+//     var minIndex = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] < min){
+//             min = arr[i];
+//             minIndex = i;
+//         }
+//     }
+//     for(let i = minIndex; i >= 0; i--){
+//         arr[i] = arr[i - 1]; 
+//     }
+//     arr[0] = min;
+//     return arr;
+// }
+
+// console.log(minToFront([4,2,1,3,5]));
+
+// ---------------------------------------------------
+
+// Remove Blanks
+
+// Create a function that, given a string, returns all of that string’s
+// contents, but without blanks. If given the string " Pl ayTha tF u nkyM usi c
+// " , return "PlayThatFunkyMusic"
+
+// function remove_blanks(str){
+//     var temp = '';
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] !== ' '){
+//             temp += str[i];
+//         }
+//     }
+//     return temp;
+// }
+
+// console.log(remove_blanks(' Pl ayTha tF u nkyM usi c'));
